@@ -40,6 +40,15 @@ strong {
   font-weight: 600;
 }
 
+.secao {
+  padding: 7.63rem 2rem;
+}
+
+.container {
+  max-width: 100rem;
+  margin: 0 auto;
+}
+
 a:link,
 a:visited {
 }
@@ -49,10 +58,36 @@ a:active {
   color: #ff6600;
 } */
 
+.hero-botao {
+  color: white;
+  box-shadow: 0 0.21rem 0.8rem rgba(0, 0, 0, 0.15);
+  border: 0;
+  border-bottom: solid 0.4rem #993c38;
+  border-right: solid 0.4rem #993c38;
+  box-shadow: 0 0.21rem 0.8rem rgba(0, 0, 0, 0.15);
+  transition: ease-in 100ms;
+  transition-property: border;
+  background-image: linear-gradient(180deg, #ff645e, #ff9253);
+}
+
+.hero-botao:hover {
+  background-color: #ff9253;
+  background-image: none;
+  border-bottom: solid 0.4rem #ff9253;
+  border-right: solid 0.4rem #ff9253;
+  color: white;
+}
+
 .botao {
+  display: inline-block;
   font-size: 2.4rem;
   font-weight: 700;
   text-decoration: none;
+  border-radius: 3rem;
+  text-align: center;
+  text-decoration: none;
+  padding: 0.65rem 2.5rem;
+  box-shadow: 0 0.21rem 0.8rem rgba(0, 0, 0, 0.15);
 }
 
 .realce-semibold {
@@ -93,6 +128,13 @@ nav ul {
   content: "\2bc6";
 }
 /* Seção Hero */
+
+.secao-hero {
+  background-image: url(https://elegant-rabanadas-4b0397.netlify.app/Imagens/Formato%20Novo/BACKGROUN-banner-01.webp);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 .hero-paragrafo {
   font-size: 1.9rem;
