@@ -288,6 +288,13 @@ nav {
   filter: grayscale(100%);
 }
 
+.logo-loreal,
+.logo-animale,
+.logo-disney,
+.logo-subsea {
+  opacity: 60%;
+}
+
 .caixa-diferenciais-h2 {
   border-left: solid 0.5rem #ffb20f;
   padding: 0.52rem 0 0.52rem 1.6rem;
@@ -310,6 +317,20 @@ nav {
 }
 
 /* Seção O que falam */
+.secao-oquefalam {
+  background-image: url(https://elegant-rabanadas-4b0397.netlify.app/Imagens/Formato%20Novo/BACKGROUN-banner-04.webp);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.oquefalam-titulo {
+  color: white;
+}
+
+.oquefalam-carrossel-img {
+  background-image: url(ttps://i3.ytimg.com/vi/N_EZD04zmrw/hqdefault.jpg);
+}
 
 /* Seção Na mídia */
 
