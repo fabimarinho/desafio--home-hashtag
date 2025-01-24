@@ -87,6 +87,8 @@ a:active {
   text-decoration: none;
   padding: 0.65rem 2.5rem;
   box-shadow: 0 0.21rem 0.8rem rgba(0, 0, 0, 0.15);
+  color: white;
+  padding: 0.65rem 2.5rem;
 }
 
 .realce-semibold {
@@ -328,12 +330,98 @@ nav {
   color: white;
 }
 
-.oquefalam-carrossel-img {
-  background-image: url(ttps://i3.ytimg.com/vi/N_EZD04zmrw/hqdefault.jpg);
+.oquefalam-carrossel {
+  position: relative;
 }
 
-/* Seção Na mídia */
+.oquefalam-carrossel-img {
+  cursor: pointer;
+  background-color: #7489af;
+  background-blend-mode: multiply;
+  position: relative;
+  display: inline-block;
+  background-position: 50%;
+  background-size: cover;
+  aspect-ratio: 16/9;
+  width: 33%;
+  border-radius: 2.5rem;
+}
 
+.oquefalam-carrossel-img--1 {
+  background-image: url(https://i3.ytimg.com/vi/N_EZD04zmrw/hqdefault.jpg);
+}
+
+.oquefalam-carrossel-img--2 {
+  background-image: url(https://i3.ytimg.com/vi/auqWeBJLJHY/hqdefault.jpg);
+}
+
+.oquefalam-carrossel-img--3 {
+  background-image: url(https://i3.ytimg.com/vi/FD79IpCaM1Y/hqdefault.jpg);
+}
+
+.oquefalam-seta {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+}
+
+.seta--esquerda {
+  transform: translate(-150%, -65%);
+  left: 0;
+}
+
+.seta--direita {
+  transform: translate(160%, -65%);
+  right: 0;
+}
+
+.seta-player {
+  transform: translate(-50%, -50%);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 3rem;
+}
+
+.item-navegacao {
+  cursor: pointer;
+  display: inline-block;
+  width: 1.2rem;
+  height: 1.2rem;
+  border-radius: 50%;
+  background-color: #86a8bc;
+}
+
+.ativa {
+  background-color: #14577f;
+}
+
+.botao-oquefalam {
+  background-image: linear-gradient(180deg, #196c9f, #1a80a7);
+  border-bottom-color: #14577f;
+  border-right-color: #14577f;
+}
+
+.botao-oquefalam:hover {
+  background-image: none;
+  background-color: #1a80a7;
+  border-bottom-color: #1a80a7;
+  border-right-color: #1a80a7;
+}
+/* Seção Na mídia */
+.secao-namidia {
+  padding-top: 3.9rem;
+  padding-bottom: 3.9rem;
+  background-image: url(https://www.hashtagtreinamentos.com/wp-content/uploads/2022/06/BACKGROUND-Banner-05_1.png);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.seta-namidia,
+.h2-namidia {
+  display: inline-block;
+}
 /* Seção conteúdos gratuitos */
 
 h2 {
