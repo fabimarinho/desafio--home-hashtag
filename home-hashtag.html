@@ -850,14 +850,15 @@
   </section>
     </main>
     <!-- Rodapé -->
-    <footer>
-      <div>
+    <footer class=" secao rodape">
+      <div class="container">
 
         <img
           src="https://www.hashtagtreinamentos.com/wp-content/uploads/2022/05/Logo-Hashtag-Original-1.png"
           alt="Logo da Hashtag"
+          class="logo-footer"
         />
-      </div>
+      
 
       <p class="rodape-titulo">Fale Conosco</p>
       <p class="rodape-subtitulo">Cursos Online</p>
@@ -920,7 +921,7 @@
       </p>
 
       <p class="rodape-titulo">Redes Sociais</p>
-      <a href="https://www.youtube.com/channel/UCw0leRmeaX7R_9BDd3TvCzg">
+      <a class="link-redessociais" href="https://www.youtube.com/channel/UCw0leRmeaX7R_9BDd3TvCzg">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="50px"
@@ -931,7 +932,7 @@
           ></path>
         </svg>
       </a>
-      <a href="https://www.instagram.com/hashtagtreinamentos/">
+      <a class="link-redessociais" href="https://www.instagram.com/hashtagtreinamentos/">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="50px"
@@ -945,7 +946,7 @@
           ></path>
         </svg>
       </a>
-      <a href="https://www.facebook.com/hashtagtreinamentos/">
+      <a  class="link-redessociais" href="https://www.facebook.com/hashtagtreinamentos/">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="50px"
@@ -957,7 +958,7 @@
           ></path>
         </svg>
       </a>
-      <a href="https://br.linkedin.com/company/hashtag-treinamentos">
+      <a class="link-redessociais" href="https://br.linkedin.com/company/hashtag-treinamentos">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="50px"
@@ -1057,9 +1058,9 @@
         <p>© 2023 Hashtag Treinamentos. Todos os Direitos Reservados</p>
       </div>
 
-      <p class="rodape-titulo">Newsletter</p>
+      <form action="" class="form form-newsletter">
+        <p class="rodape-titulo">Newsletter</p>
 
-      <form action="">
         <div>
           <label for="nome">Nome</label>
           <input
@@ -1067,6 +1068,7 @@
             id="name"
             name="name"
             placeholder="*Escreva seu nome"
+            required
           />
         </div>
         <div> 
@@ -1076,18 +1078,22 @@
             id="email"
             name="email"
             placeholder="*Digite seu email"
+            required
           />
         </div>
 
-        <button type="submit">Enviar</button>
+        <button type="submit" class="botao botao-rodape">Enviar</button>
       </form>
 
       <a
         href="https://api.whatsapp.com/send?phone=5521996582442&text=Ol%C3%A1%2C%20gostaria%20de%20tirar%20uma%20d%C3%BAvida%20%20sobre%20o%20curso%20online"
+        class="logo-whatsapp"
         ><img
           src="https://www.hashtagtreinamentos.com/wp-content/uploads/2023/06/whatsapp-logo-2.png"
           alt="Logo do WhatsApp"
+          class="icone-whatsapp"
       /></a>
+    </div>
     </footer>
   </body>
 </html>
