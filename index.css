@@ -14,6 +14,7 @@ body {
   color: #404040;
   font-size: 1.6rem;
   line-height: 1.4;
+  background-color: #f4f5f7;
 }
 
 h1 {
@@ -27,7 +28,8 @@ h2 {
   font-weight: 400;
   line-height: 1.1;
 }
-h3 {
+h3,
+.blog-titulopost {
   font-size: 2.3rem;
   line-height: 1.2;
 }
@@ -39,6 +41,27 @@ strong {
 ul {
   list-style: none;
 }
+
+input {
+  padding: 1.02rem;
+  background-color: white;
+  box-shadow: inset 0 0 0.2rem 0.2rem rgba(0, 0, 0, 0.15);
+  border: 0;
+  border-radius: 0.8rem;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  color: #404040;
+}
+
+input:focus {
+  outline: none;
+}
+
+input::placeholder {
+  color: #757575;
+}
+
 .secao {
   padding: 7.63rem 2rem;
 }
@@ -46,12 +69,6 @@ ul {
 .container {
   max-width: 100rem;
   margin: 0 auto;
-}
-
-.container-diferenciais,
-.container-blog {
-  border-radius: 5rem;
-  box-shadow: inset 0 0 0.8rem 0.3rem rgba(0, 0, 0, 0.15);
 }
 
 a:link,
@@ -83,18 +100,25 @@ a:active {
   color: white;
 }
 
+.container-diferenciais,
+.container-blog {
+  border-radius: 5rem;
+  box-shadow: inset 0 0 0.8rem 0.3rem rgba(0, 0, 0, 0.15);
+}
+
 .botao {
   display: inline-block;
   font-size: 2.4rem;
+  text-align: center;
   font-weight: 700;
   text-decoration: none;
   border-radius: 3rem;
-  text-align: center;
-  text-decoration: none;
   padding: 0.65rem 2.5rem;
-  box-shadow: 0 0.21rem 0.8rem rgba(0, 0, 0, 0.15);
   color: white;
-  padding: 0.65rem 2.5rem;
+  box-shadow: 0 0.21rem 0.8rem rgba(0, 0, 0, 0.15);
+  border: 0;
+  border-bottom: solid 0.4rem #993c38;
+  border-right: solid 0.4rem #993c38;
 }
 
 .realce-semibold {
@@ -407,11 +431,13 @@ nav {
 }
 
 .botao-oquefalam:hover {
-  background-image: none;
   background-color: #1a80a7;
+  background-image: none;
   border-bottom-color: #1a80a7;
   border-right-color: #1a80a7;
+  color: white;
 }
+
 /* Seção Na mídia */
 .secao-namidia {
   padding-top: 3.9rem;
@@ -487,43 +513,111 @@ h2 {
 }
 
 .caixa-blog-h2 {
+  width: max-content;
+  padding: 1.2rem 3.12rem;
   background-image: linear-gradient(90deg, #feb914, #f6a50b);
 }
 
-.blog-postadoem {
-  font-size: 1.5rem;
+.caixa-postblog {
+  display: inline-block;
+  border-radius: 2.5rem;
+  box-shadow: inset 0 0 0.4rem 0.15rem rgba(0, 0, 0, 0.15);
+  padding: 2rem;
+  width: 49%;
+  background-color: #fff;
 }
+
+.caixa-postblog img {
+  width: 100%;
+}
+
+.blog-postadoem {
+  font-size: 1.3rem;
+  line-height: 1.5;
+}
+
 .blog-postadoem a {
   font-weight: 600;
   color: #f7a70c;
   text-decoration: none;
 }
+
 .blog-titulopost {
-  font-size: 2.4rem;
   font-weight: 600;
   text-decoration: none;
 }
-.blog-descricaopost {
-  font-size: 1.7rem;
-}
 
 /* Como posso ajudar */
+.secao-comoajudar {
+  padding: 0;
+}
+.secao-sec-laranja {
+  background-image: url(https://elegant-rabanadas-4b0397.netlify.app/Imagens/Formato%20Novo/BACKGROUND-banner-07.webp);
+  background-position: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.secao-sec-laranja,
+.secao-sec-cinza {
+  padding: 7.63rem 2rem;
+}
+.caixa-comoajudar-h2 {
+  display: inline-block;
+  padding: 0.42rem 1.6rem;
+  color: white;
+  border-radius: 1rem;
+  box-shadow: 0 0.21rem 0.4rem rgba(0, 0, 0, 0.15);
+  background-image: linear-gradient(90deg, #14a1d5, #1a8ad4);
+}
+
+.caixa-comoajudar-lista {
+  background-color: #f9f9f9;
+  border-radius: 2.5rem;
+  box-shadow: inset 0 0 0.8rem 0.15rem rgba(0, 0, 0, 0.15);
+  padding: 2.5rem;
+}
 
 .realce-semibold {
   font-weight: 600;
 }
 
-.comoajudar-lista a,
-.comoajudar-paragrafo a {
+.caixa-comoajudar-lista a:link,
+.caixa-comoajudar-lista a:visited,
+.comoajudar-paragrafo a:link,
+.comoajudar-paragrafo a:visited {
   color: #008ff7;
   font-weight: 600;
 }
+
+.caixa-comoajudar-lista a:hover,
+.caixa-comoajudar-lista a:active,
+.comoajudar-paragrafo a:hover,
+.comoajudar-paragrafo a:active {
+  color: #0056b3;
+}
+
 .comoajudar-paragrafo b {
   font-weight: 600;
 }
 
 /* Seção minicurso */
-/* --------------- */
+.secao-minicurso {
+  background-image: linear-gradient(90deg, #9e4ad7, #753db6);
+  color: white;
+}
+
+.botao-minicurso {
+  background-color: #ffba29;
+  border-bottom-color: #664a10;
+  border-right-color: #664a10;
+  justify-self: center;
+}
+
+.botao-minicurso:hover {
+  border-bottom: solid 0.4rem #ffba29;
+  border-right: solid 0.4rem #ffba29;
+}
 
 /* Rodapé */
 .rodape-titulo {
