@@ -150,8 +150,12 @@ a:active {
 
 /* Cabeçalho */
 .cabecalho {
-  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
   position: sticky;
+  z-index: 9999;
   top: 0;
   left: 0;
   background-color: white;
@@ -159,9 +163,10 @@ a:active {
   box-shadow: 0 0.21rem 0.4rem rgba(0, 0, 0, 0.1);
 }
 
-/* Temporário */
-nav {
-  display: none;
+nav ul {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
 }
 
 .item-lista-cabecalho a {
@@ -180,6 +185,33 @@ nav {
 .item-lista-cabecalho.contem-filhos::after {
   content: "\2bc6";
 }
+
+.contem-filhos {
+  position: relative;
+}
+.contem-filhos ul {
+  display: flex;
+  position: absolute;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 2.5rem;
+  box-shadow: 0 0.21rem 0.4rem rgba(0, 0, 0, 0.15),
+    inset 0 0 0.4rem 0.1rem rgba(0, 0, 0, 0.1);
+}
+
+.contem-filhos ul li {
+  border-bottom: solid 1px rgba(0, 0, 0, 0.1);
+  padding: 0.41rem 2rem;
+}
+
+.contem-filhos ul li:last-child {
+  border-bottom: none;
+}
+
+/* .contem-filhos:hover ul {
+  display: block;
+} */
+
 /* Seção Hero */
 
 .secao-hero {
