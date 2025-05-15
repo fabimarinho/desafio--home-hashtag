@@ -281,16 +281,89 @@ nav ul {
   border-radius: 50%;
   padding: 1.02rem;
   box-shadow: inset 0 0 0.4rem 0.2rem rgba(0, 0, 0, 0.15);
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.circulo-logo-curso:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.curso-badge {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: white;
+}
+
+.curso-badge.novo {
+  background-color: #7a40be;
+}
+
+.curso-badge.popular {
+  background-color: #ff6600;
+}
+
+.gratuito-link-lista {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 0.8rem 1.6rem;
+  border-radius: 2.5rem;
+  background-color: #eee;
+  text-decoration: none;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.gratuito-link-lista:hover {
+  transform: translateX(5px);
+  background-color: #e0e0e0;
+}
+
+.rede-social-stats {
+  margin-left: auto;
+  font-size: 1.4rem;
+  color: #666;
+}
+
+.conteudos-caixa-logos {
+  display: flex;
+  gap: 1.6rem;
+  margin-bottom: 2rem;
+}
+
+/* Tooltip */
+.circulo-logo-curso::after {
+  content: attr(title);
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 5px 10px;
+  background: rgba(0,0,0,0.8);
+  color: white;
+  border-radius: 4px;
+  font-size: 1.2rem;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.circulo-logo-curso:hover::after {
+  opacity: 1;
+  visibility: visible;
 }
 
 .conteudos-titulo {
   display: flex;
   align-items: center;
   gap: 1.6rem;
-}
-.conteudos-caixa-logos {
-  display: flex;
-  gap: 0.65rem;
 }
 
 .conteudos-coluna {
@@ -381,6 +454,8 @@ nav ul {
   background-color: white;
 }
 .caixa-titulo-diferenciais {
+  display: flex;
+  gap: 4.88rem;
   border-top-left-radius: 5rem;
   border-top-right-radius: 5rem;
   padding: 4.88rem;
@@ -388,16 +463,46 @@ nav ul {
   background-image: linear-gradient(225deg, #196b9f, #1a82a7);
 }
 
+.diferenciais-p{
+  margin-top: 0.52rem;
+  flex: 1;
+  text-align: right;
+}
+
+.caixa-diferenciais-h2 {
+  flex: 1;
+  border-left: solid 0.5rem #ffb20f;
+  padding: 0.52rem 0 0.52rem 1.6rem;
+}
+
 .caixa-restante-diferenciais {
   padding: 4.88rem !important;
 }
 
+.bloco-itens-diferenciais{
+  display: flex;
+  gap: 2.5rem;
+}
+
+
 .caixa-itens-diferenciais {
+  display: flex;
+  flex-flow: column;
+  gap: 1.6rem;
+  align-items: center;
+  text-align: center;
   position: relative;
   border-radius: 2.5rem;
   background-color: white;
   box-shadow: 0 0 0.8rem 0.3rem rgba(0, 0, 0, 0.1);
-  padding: 3.12rem 2.5rem;
+  padding: 7rem 2.5rem 3.12rem 2.5rem;
+}
+
+.caixa-item-diferenciais{
+  display: flex;
+flex-flow: column;
+gap: 1.02rem ;
+
 }
 
 .caixa-imagem-diferenciais {
@@ -430,10 +535,7 @@ nav ul {
   opacity: 60%;
 }
 
-.caixa-diferenciais-h2 {
-  border-left: solid 0.5rem #ffb20f;
-  padding: 0.52rem 0 0.52rem 1.6rem;
-}
+
 
 .diferenciais-h3 {
   color: #005e88;
