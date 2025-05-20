@@ -540,7 +540,7 @@ nav ul {
 }
 
 .caixa-itens-diferenciais {
-  flex: 1;
+  flex: 1.02;
   display: flex;
   flex-flow: column;
   gap: 1.6rem;
@@ -550,14 +550,18 @@ nav ul {
   border-radius: 2.5rem;
   background-color: white;
   box-shadow: 0 0 0.8rem 0.3rem rgba(0, 0, 0, 0.15);
-  padding: 7rem 2.3rem 3.12rem 2.3rem;
+  padding: 6.5rem 2.3rem 3.12rem 2.3rem;
+}
+
+.caixa-itens-diferenciais:first-child {
+  flex: 0.98;
+  padding-top: 5rem;
 }
 
 .caixa-itens-diferenciais:last-child {
-  flex: 0.8;
+  flex: 1.02;
   padding-top: 4rem;
   padding-bottom: 1.5rem;
-  height: 85%;
   margin-top: 4rem;
 }
 
