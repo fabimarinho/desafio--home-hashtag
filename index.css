@@ -909,6 +909,13 @@ h2 {
 }
 
 /* Como posso ajudar */
+.container-comoajudar{
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  gap: 3.9rem;
+}
+
 .secao-comoajudar {
   padding: 0;
 }
@@ -933,10 +940,21 @@ h2 {
 }
 
 .caixa-comoajudar-lista {
+  display: flex;
+  flex-flow: column;
+  font-size: 1.92rem;
+  gap: 2rem;
   background-color: #f9f9f9;
   border-radius: 2.5rem;
   box-shadow: inset 0 0 0.8rem 0.15rem rgba(0, 0, 0, 0.15);
   padding: 2.5rem;
+}
+
+.caixa-comoajudar-lista li{
+  display: flex;
+  align-items: center;
+  gap: 0.82rem;
+  font-weight: normal;
 }
 
 .realce-semibold {
@@ -948,7 +966,7 @@ h2 {
 .comoajudar-paragrafo a:link,
 .comoajudar-paragrafo a:visited {
   color: #008ff7;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 .caixa-comoajudar-lista a:hover,
@@ -959,7 +977,19 @@ h2 {
 }
 
 .comoajudar-paragrafo b {
-  font-weight: 600;
+  font-weight: normal;
+}
+
+.comoajudar-paragrafo {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  gap: 1.6rem;
+  font-weight: 400;
+  font-size: 1.92rem;
+  text-align: center;
+  max-width: 80rem;
+  margin: 0 auto;
 }
 
 /* Seção minicurso */
