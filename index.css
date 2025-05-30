@@ -273,11 +273,6 @@ nav ul {
   background-size: cover;
 }
 
-.container {
-  display: flex;
-  align-items: center;
-}
-
 .circulo-logo-curso {
   display: inline-block;
   width: 4.5rem;
@@ -863,9 +858,13 @@ h2 {
 }
 
 .container-blog {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 2.5rem;
   position: relative;
   background-color: #f9f9f9;
   padding: 4.88rem;
+  padding-top: 7.63rem;
 }
 
 .caixa-gratuito-h3 {
@@ -873,22 +872,31 @@ h2 {
 }
 
 .caixa-blog-h2 {
+  top: -1rem;
   width: max-content;
   padding: 1.2rem 3.12rem;
   background-image: linear-gradient(90deg, #feb914, #f6a50b);
 }
 
 .caixa-postblog {
-  display: inline-block;
+  display: flex;
+  flex-flow: column;
+  flex: 1 1 calc(50% - 1.25rem);
+  gap: 1.28rem;
   border-radius: 2.5rem;
   box-shadow: inset 0 0 0.4rem 0.15rem rgba(0, 0, 0, 0.15);
   padding: 2rem;
-  width: 49%;
   background-color: #fff;
 }
 
 .caixa-postblog img {
   width: 100%;
+}
+
+.caixa-imgpostadoem {
+  display: flex;
+  flex-flow: column;
+  gap: 0.42rem;
 }
 
 .blog-postadoem {
@@ -909,7 +917,7 @@ h2 {
 }
 
 /* Como posso ajudar */
-.container-comoajudar{
+.container-comoajudar {
   display: flex;
   flex-flow: column;
   align-items: center;
@@ -943,18 +951,24 @@ h2 {
   display: flex;
   flex-flow: column;
   font-size: 1.92rem;
-  gap: 2rem;
+  gap: 1rem;
   background-color: #f9f9f9;
   border-radius: 2.5rem;
   box-shadow: inset 0 0 0.8rem 0.15rem rgba(0, 0, 0, 0.15);
   padding: 2.5rem;
+  max-width: 80rem;
+  margin: 0 auto;
 }
 
-.caixa-comoajudar-lista li{
+.caixa-comoajudar-lista li {
   display: flex;
-  align-items: center;
+  align-items: start;
   gap: 0.82rem;
   font-weight: normal;
+}
+
+.caixa-comoajudar-lista li img {
+  transform: translateY(35%);
 }
 
 .realce-semibold {
@@ -976,26 +990,55 @@ h2 {
   color: #0056b3;
 }
 
-.comoajudar-paragrafo b {
+/* .comoajudar-paragrafo b {
   font-weight: normal;
-}
+} */
 
 .comoajudar-paragrafo {
-  display: flex;
-  flex-flow: column;
-  align-items: center;
-  gap: 1.6rem;
+  text-align: left;
+  margin-bottom: 2rem;
+  max-width: 80rem;
+  margin-left: auto;
+  margin-right: auto;
+  gap: 2rem;
   font-weight: 400;
   font-size: 1.92rem;
-  text-align: center;
-  max-width: 80rem;
-  margin: 0 auto;
+  line-height: 1.3;
+}
+
+.comoajudar-paragrafo + .comoajudar-paragrafo {
+  margin-top: 2rem;
 }
 
 /* Seção minicurso */
 .secao-minicurso {
   background-image: linear-gradient(90deg, #9e4ad7, #753db6);
   color: white;
+}
+
+.container-minicurso {
+  display: flex;
+  flex-flow: column;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+.form-minicurso {
+  display: flex;
+  align-self: stretch;
+  justify-content: space-between;
+  align-items: end;
+  gap: 2rem;
+}
+
+.form div {
+  display: flex;
+  flex-flow: column;
+  gap: 0.82rem;
+}
+
+.form div label {
+  gap: 0.5rem;
 }
 
 .botao-minicurso {
@@ -1014,8 +1057,54 @@ h2 {
   border: solid 0.2rem #664a10;
 }
 /* Rodapé */
+.container-rodape {
+  width: 106rem;
+  display: flex;
+  align-items: start;
+  gap: 4.88rem;
+}
+
 .logo-footer {
   width: 18rem;
+}
+
+.subsecao-rodape,
+.subsecao-cursosonline,
+.subsecao-assistente,
+.rodape-div-iconelink,
+.rodape-coluna {
+  display: flex;
+  flex-flow: column;
+}
+
+.rodape-coluna {
+  gap: 3.12rem;
+}
+.subsecao-assistente {
+  gap: 1.02rem;
+}
+
+.subsecao-rodape {
+  gap: 1.6rem;
+}
+
+.subsecao-cursosonline {
+  gap: 1.28rem;
+}
+
+.rodape-iconelink {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+}
+
+.rodape-redessociais {
+  display: flex;
+  gap: 0.82rem;
+}
+
+.rodape-div-iconelink {
+  gap: 0.65rem;
 }
 
 .rodape-titulo,
@@ -1033,6 +1122,11 @@ h2 {
 
 .rodape svg {
   width: 2.4rem;
+}
+
+.link-redessociais svg {
+  fill: #404040;
+  stroke: #404040;
 }
 
 .link-redessociais:hover svg {
@@ -1071,6 +1165,10 @@ h2 {
 }
 
 .form-newsletter {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  gap: 1.6rem;
   border-radius: 2.5rem;
   box-shadow: inset 0 0 0.8rem 0.15rem rgba(0, 0, 0, 0.15);
   padding: 2.5rem;
@@ -1091,4 +1189,21 @@ h2 {
 
 .logo-whatsapp img {
   width: 100%;
+}
+
+.blog-posts {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 2.5rem;
+}
+
+.caixa-postblog {
+  display: flex;
+  flex-flow: column;
+  flex: 1 1 calc(50% - 1.25rem);
+  gap: 1.28rem;
+  border-radius: 2.5rem;
+  box-shadow: inset 0 0 0.4rem 0.15rem rgba(0, 0, 0, 0.15);
+  padding: 2rem;
+  background-color: #fff;
 }
